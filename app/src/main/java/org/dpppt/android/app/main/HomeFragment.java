@@ -41,7 +41,6 @@ import org.dpppt.android.app.util.NotificatonErrorStateHelper;
 import org.dpppt.android.app.util.TracingErrorStateHelper;
 import org.dpppt.android.app.viewmodel.TracingViewModel;
 import org.dpppt.android.app.whattodo.WtdPositiveTestFragment;
-import org.dpppt.android.app.whattodo.WtdSymptomsFragment;
 import org.dpppt.android.sdk.TracingStatus;
 
 import static android.view.View.VISIBLE;
@@ -58,9 +57,7 @@ public class HomeFragment extends Fragment {
 	private View reportStatusBubble;
 	private View reportStatusView;
 	private View reportErrorView;
-	private View cardSymptomsFrame;
 	private View cardTestFrame;
-	private View cardSymptoms;
 	private View cardTest;
 	private View loadingView;
 
@@ -102,8 +99,6 @@ public class HomeFragment extends Fragment {
 		reportErrorView = reportStatusBubble.findViewById(R.id.report_errors);
 		headerView = view.findViewById(R.id.home_header_view);
 		scrollView = view.findViewById(R.id.home_scroll_view);
-		cardSymptoms = view.findViewById(R.id.card_what_to_do_symptoms);
-		cardSymptomsFrame = view.findViewById(R.id.frame_card_symptoms);
 		cardTest = view.findViewById(R.id.card_what_to_do_test);
 		cardTestFrame = view.findViewById(R.id.frame_card_test);
 		loadingView = view.findViewById(R.id.loading_view);
@@ -189,13 +184,11 @@ public class HomeFragment extends Fragment {
 
 		tracingViewModel.getAppStatusLiveData().observe(getViewLifecycleOwner(), tracingStatusInterface -> {
 			if (tracingStatusInterface.isReportedAsInfected()) {
-				cardSymptomsFrame.setVisibility(View.GONE);
 				cardTestFrame.setVisibility(View.GONE);
 				tracingCard.findViewById(R.id.contacs_chevron).setVisibility(View.GONE);
 				tracingCard.setOnClickListener(null);
 				tracingCard.setForeground(null);
 			} else {
-				cardSymptomsFrame.setVisibility(VISIBLE);
 				cardTestFrame.setVisibility(VISIBLE);
 				tracingCard.findViewById(R.id.contacs_chevron).setVisibility(VISIBLE);
 				tracingCard.setOnClickListener(v -> showContactsFragment());
@@ -308,12 +301,6 @@ public class HomeFragment extends Fragment {
 
 	private void setupWhatToDo() {
 
-		cardSymptoms.setOnClickListener(
-				v -> getParentFragmentManager().beginTransaction()
-						.setCustomAnimations(R.anim.slide_enter, R.anim.slide_exit, R.anim.slide_pop_enter, R.anim.slide_pop_exit)
-						.replace(R.id.main_fragment_container, WtdSymptomsFragment.newInstance())
-						.addToBackStack(WtdSymptomsFragment.class.getCanonicalName())
-						.commit());
 		cardTest.setOnClickListener(
 				v -> getParentFragmentManager().beginTransaction()
 						.setCustomAnimations(R.anim.slide_enter, R.anim.slide_exit, R.anim.slide_pop_enter, R.anim.slide_pop_exit)

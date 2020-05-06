@@ -201,12 +201,6 @@ Così contribuisci a contenere la dffusione del nuovo coronavirus."</string>
     <!-- Tab-Titel -->
     <string name="tab_tracing_title">"Tracciamento"</string>
 
-    <!-- Titel auf Homescreen für Was tun Section -->
-    <string name="whattodo_title_symptoms">"ho sintomi di malattia"</string>
-
-    <!-- Subtitel auf Homescreen für Was Tun Section -->
-    <string name="whattodo_subtitle_symptoms">"Cosa faccio se..."</string>
-
     <!-- Titel auf Homescreen bei Was tun Section -->
     <string name="whattodo_title_positivetest">"il risultato del test è positivo"</string>
 

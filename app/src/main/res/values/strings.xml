@@ -201,12 +201,6 @@ Thank you for helping to contain the spread of the coronavirus."</string>
     <!-- Tab-Titel -->
     <string name="tab_tracing_title">"Tracing"</string>
 
-    <!-- Titel auf Homescreen für Was tun Section -->
-    <string name="whattodo_title_symptoms">"Symptoms of the disease"</string>
-
-    <!-- Subtitel auf Homescreen für Was Tun Section -->
-    <string name="whattodo_subtitle_symptoms">"What to do if …"</string>
-
     <!-- Titel auf Homescreen bei Was tun Section -->
     <string name="whattodo_title_positivetest">"you test positive"</string>
 

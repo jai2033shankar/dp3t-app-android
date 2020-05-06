@@ -201,12 +201,6 @@ Ainsi, vous contribuez à endiguer la propagation du nouveau coronavirus."</stri
     <!-- Tab-Titel -->
     <string name="tab_tracing_title">"Traçage"</string>
 
-    <!-- Titel auf Homescreen für Was tun Section -->
-    <string name="whattodo_title_symptoms">"Symptômes de la maladie"</string>
-
-    <!-- Subtitel auf Homescreen für Was Tun Section -->
-    <string name="whattodo_subtitle_symptoms">"Que faire en cas de…"</string>
-
     <!-- Titel auf Homescreen bei Was tun Section -->
     <string name="whattodo_title_positivetest">"test positif"</string>
 
