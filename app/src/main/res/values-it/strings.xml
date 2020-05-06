@@ -2,10 +2,10 @@
 <resources>
 
     <!-- App Name -->
-    <string name="app_name">"dp3t-app"</string>
+    <string name="app_name">"DP3T Demo"</string>
 
     <!-- App Name (unter Icon auf iOS) -->
-    <string name="CFBundleDisplayName">"dp3t-app"</string>
+    <string name="CFBundleDisplayName">"DP3T Demo"</string>
 
     <!-- Loading View: Erneut laden -->
     <string name="loading_view_reload">"Ricarica"</string>
