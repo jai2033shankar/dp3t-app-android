@@ -22,14 +22,14 @@ import org.dpppt.android.app.util.NotificationUtil;
 import org.dpppt.android.sdk.DP3T;
 import org.dpppt.android.sdk.InfectionStatus;
 import org.dpppt.android.sdk.TracingStatus;
-import org.dpppt.android.sdk.backend.models.ApplicationInfo;
 import org.dpppt.android.sdk.internal.backend.BackendBucketRepository;
-import org.dpppt.android.sdk.internal.backend.CertificatePinning;
 import org.dpppt.android.sdk.internal.database.models.ExposureDay;
 import org.dpppt.android.sdk.internal.logger.LogLevel;
 import org.dpppt.android.sdk.internal.logger.Logger;
 import org.dpppt.android.sdk.internal.util.ProcessUtil;
 import org.dpppt.android.sdk.util.SignatureUtil;
+
+import okhttp3.CertificatePinner;
 
 public class MainApplication extends Application {
 
@@ -45,11 +45,12 @@ public class MainApplication extends Application {
 		if (ProcessUtil.isMainProcess(this)) {
 			registerReceiver(contactUpdateReceiver, DP3T.getUpdateIntentFilter());
 
-			PublicKey signaturePublicKey = SignatureUtil.getPublicKeyFromBase64OrThrow(BuildConfig.BUCKET_PUBLIC_KEY);
-			DP3T.init(this, new ApplicationInfo("dp3t-app", BuildConfig.REPORT_URL, BuildConfig.BUCKET_URL), signaturePublicKey);
-
-			DP3T.setCertificatePinner(CertificatePinning.getCertificatePinner());
-
+			PublicKey publicKey = SignatureUtil.getPublicKeyFromBase64OrThrow(BuildConfig.BUCKET_PUBLIC_KEY);
+			DP3T.init(this, "org.dpppt.demo", true, publicKey);
+			CertificatePinner certificatePinner = new CertificatePinner.Builder()
+					.add("demo.dpppt.org", "sha256/YLh1dUR9y6Kja30RrAn7JKnbQG/uEtLMkBgFF2Fuihg=")
+					.build();
+			DP3T.setCertificatePinner(certificatePinner);
 		}
 	}
 
