@@ -28,7 +28,6 @@ android {
 		dev {
 			buildConfigField 'boolean', 'IS_DEV', 'true'
 			buildConfigField 'String', 'AUTH_CODE_URL', '"https://codegen-service-d.bag.admin.ch/"'
-			buildConfigField 'String', 'CONFIG_URL', '"https://www.pt-d.bfs.admin.ch/"'
 			buildConfigField 'String', 'BUCKET_URL', '"https://www.pt-d.bfs.admin.ch/"'
 			buildConfigField 'String', 'REPORT_URL', '"https://www.pt1-d.bfs.admin.ch/"'
 			buildConfigField 'String', 'BUCKET_PUBLIC_KEY', '"LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUZrd0V3WUhLb1pJemowQ0FRWUlLb1pJemowREFRY0RRZ0FFc0ZjRW5PUFk0QU9BS2twdjlIU2RXMkJyaFVDVwp3TDE1SHBxdTV6SGFXeTFXbm8yS1I4RzZkWUo4UU8wdVp1MU02ajh6Nk5HWEZWWmNwdzd0WWVYQXFRPT0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0t"'

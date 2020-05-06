@@ -17,7 +17,6 @@ import androidx.core.app.NotificationCompat;
 
 import java.security.PublicKey;
 
-import org.dpppt.android.app.networking.FakeWorker;
 import org.dpppt.android.app.storage.SecureStorage;
 import org.dpppt.android.app.util.NotificationUtil;
 import org.dpppt.android.sdk.DP3T;
@@ -51,7 +50,6 @@ public class MainApplication extends Application {
 
 			DP3T.setCertificatePinner(CertificatePinning.getCertificatePinner());
 
-			FakeWorker.safeStartFakeWorker(this);
 		}
 	}
 

@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
+import java.util.Calendar;
 import java.util.Date;
 
 import org.dpppt.android.app.R;
@@ -24,7 +25,6 @@ import org.dpppt.android.app.networking.models.AuthenticationCodeRequestModel;
 import org.dpppt.android.app.networking.models.AuthenticationCodeResponseModel;
 import org.dpppt.android.app.storage.SecureStorage;
 import org.dpppt.android.app.util.InfoDialog;
-import org.dpppt.android.app.util.JwtUtil;
 import org.dpppt.android.sdk.DP3T;
 import org.dpppt.android.sdk.backend.ResponseCallback;
 import org.dpppt.android.sdk.backend.models.ExposeeAuthMethodAuthorization;
@@ -92,8 +92,9 @@ public class InformFragment extends Fragment {
 
 			progressDialog = createProgressDialog();
 			if (System.currentTimeMillis() - lastRequestTime < TIMEOUT_VALID_CODE && lastToken != null) {
-				Date onsetDate = JwtUtil.getOnsetDate(lastToken);
-				informExposed(onsetDate, getAuthorizationHeader(lastToken));
+				Calendar calendar = Calendar.getInstance();
+				calendar.add(Calendar.MONTH, -14);
+				informExposed(calendar.getTime(), getAuthorizationHeader(lastToken));
 			} else {
 				authenticateInput(authCode);
 			}
@@ -113,17 +114,9 @@ public class InformFragment extends Fragment {
 						String accessToken = response.getAccessToken();
 
 						secureStorage.saveInformTimeAndCodeAndToken(authCode, accessToken);
-
-						Date onsetDate = JwtUtil.getOnsetDate(accessToken);
-						if (onsetDate == null) {
-							showErrorDialog(getString(R.string.invalid_response_auth_code), null);
-							if (progressDialog != null && progressDialog.isShowing()) {
-								progressDialog.dismiss();
-							}
-							buttonSend.setEnabled(true);
-							return;
-						}
-						informExposed(onsetDate, getAuthorizationHeader(accessToken));
+						Calendar calendar = Calendar.getInstance();
+						calendar.add(Calendar.MONTH, -14);
+						informExposed(calendar.getTime(), getAuthorizationHeader(accessToken));
 					}
 
 					@Override
