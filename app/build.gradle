@@ -31,7 +31,6 @@ android {
 	productFlavors {
 		dev {
 			buildConfigField 'boolean', 'IS_DEV', 'true'
-			buildConfigField 'String', 'AUTH_CODE_URL', '"https://codegen-service-d.bag.admin.ch/"'
 		}
 	}
 
