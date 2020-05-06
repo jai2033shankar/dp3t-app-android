@@ -15,14 +15,6 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content">
 
-		<ImageView
-			android:layout_width="wrap_content"
-			android:layout_height="@dimen/icon_size_toolbar"
-			android:layout_gravity="left"
-			android:adjustViewBounds="true"
-			android:scaleType="fitCenter"
-			android:src="@drawable/ic_schweiz_wappen" />
-
 		<TextView
 			style="@style/NextStep.Text.Bold"
 			android:layout_width="wrap_content"
