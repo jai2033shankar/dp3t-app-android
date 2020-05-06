@@ -1,17 +1,33 @@
+/*
+ * Created by Ubique Innovation AG
+ * https://www.ubique.ch
+ * Copyright (c) 2020. All rights reserved.
+ */
 package org.dpppt.android.app.main.model;
 
-import org.dpppt.android.app.debug.model.DebugAppState;
+import java.util.List;
+
+import org.dpppt.android.sdk.TracingStatus;
+import org.dpppt.android.sdk.internal.database.models.ExposureDay;
 
 public interface TracingStatusInterface {
 
-	boolean isReportedAsExposed();
+	void setStatus(TracingStatus status);
 
-	boolean wasContactExposed();
+	boolean isReportedAsInfected();
 
-	void setDebugAppState(DebugAppState debugAppState);
+	List<ExposureDay> getExposureDays();
 
-	DebugAppState getDebugAppState();
+	boolean wasContactReportedAsExposed();
 
-	AppState getAppState();
+	TracingState getTracingState();
+
+	NotificationState getNotificationState();
+
+	TracingStatus.ErrorState getTracingErrorState();
+
+	TracingStatus.ErrorState getReportErrorState();
+
+	long getDaysSinceExposure();
 
 }

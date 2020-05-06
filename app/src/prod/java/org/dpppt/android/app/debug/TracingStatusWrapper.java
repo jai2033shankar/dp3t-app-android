@@ -1,6 +1,6 @@
 package org.dpppt.android.app.debug;
 
-import org.dpppt.android.app.debug.model.DebugAppState;
+import org.dpppt.android.app.debug.debug.model.DebugAppState;
 import org.dpppt.android.app.main.model.AppState;
 import org.dpppt.android.app.main.model.TracingStatusInterface;
 import org.dpppt.android.sdk.TracingStatus;
