@@ -4,5 +4,5 @@
  * Copyright (c) 2020. All rights reserved.
  */
 
-rootProject.name='NextStep'
+rootProject.name='DP3T Demo'
 include ':app'
