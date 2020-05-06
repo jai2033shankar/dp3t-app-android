@@ -22,10 +22,7 @@ import org.dpppt.android.app.util.NotificationUtil;
 import org.dpppt.android.sdk.DP3T;
 import org.dpppt.android.sdk.InfectionStatus;
 import org.dpppt.android.sdk.TracingStatus;
-import org.dpppt.android.sdk.internal.backend.BackendBucketRepository;
 import org.dpppt.android.sdk.internal.database.models.ExposureDay;
-import org.dpppt.android.sdk.internal.logger.LogLevel;
-import org.dpppt.android.sdk.internal.logger.Logger;
 import org.dpppt.android.sdk.internal.util.ProcessUtil;
 import org.dpppt.android.sdk.util.SignatureUtil;
 
@@ -37,18 +34,11 @@ public class MainApplication extends Application {
 	public void onCreate() {
 		super.onCreate();
 
-		if (BuildConfig.IS_DEV) {
-			BackendBucketRepository.BATCH_LENGTH = 5 * 60 * 1000L;
-			Logger.init(getApplicationContext(), LogLevel.DEBUG);
-		}
-
 		if (ProcessUtil.isMainProcess(this)) {
 			registerReceiver(contactUpdateReceiver, DP3T.getUpdateIntentFilter());
 
 			PublicKey publicKey = SignatureUtil.getPublicKeyFromBase64OrThrow(
-					"LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUZrd0V3WUhLb1pJemowQ0FRWUlLb1pJemowREFRY0R" +
-							"RZ0FFWTc3MFZEWjJlZjZCYjh0UXZYWVJpcUFaemtHLwpwNWs0U3pTV3FRY00zNzlqTVN6c3JOaU5nc0" +
-							"hWZlRPeGFqMUFzQ3RrNmJVUDV1cDc3RU5nckVzVkh3PT0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0t");
+					"LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUZrd0V3WUhLb1pJemowQ0FRWUlLb1pJemowREFRY0RRZ0FFNWRkZWlXN1NHS0ljWS9ESSs1U0NhZnlRWlU0LwpEZXFieCtXRHpFSjF1dWZuYUdVeThEeHZodENyRTFOOTFyQ1BmcDBXT0ZZdkNKTmJ1dXRKVmRrV1VnPT0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0t");
 			DP3T.init(this, "org.dpppt.demo", true, publicKey);
 			CertificatePinner certificatePinner = new CertificatePinner.Builder()
 					.add("demo.dpppt.org", "sha256/YLh1dUR9y6Kja30RrAn7JKnbQG/uEtLMkBgFF2Fuihg=")
