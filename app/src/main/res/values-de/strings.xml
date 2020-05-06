@@ -698,9 +698,6 @@ Dieser wird lokal auf den Geräten gespeichert und nach 21 Tagen wieder gelösch
 
 Die Batterienutzung erhöht sich dadurch nur leicht."</string>
 
-    <!-- FAQ Button Titel -->
-    <string name="faq_button_title">"Häufige Fragen"</string>
-
     <!-- Meldungen Keine Meldungen FAQ Titel -->
     <string name="meldungen_nomeldungen_faq1_title">"Was sind Meldungen?"</string>
 
@@ -783,9 +780,6 @@ Damit können andere dp3t-app App Nutzer prüfen, ob Sie in den letzten Tagen ei
 
     <!-- Telefonnummer der Infoline -->
     <string name="infoline_tel_number">"0000"</string>
-
-    <!-- URL für Häufige Fragen Button -->
-    <string name="faq_button_url">"https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/haeufig-gestellte-fragen.html"</string>
 
     <!-- Informieren Flow: Titel erster Screen -->
     <string name="inform_code_intro_title">"Wichtiger Hinweis"</string>

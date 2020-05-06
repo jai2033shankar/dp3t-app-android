@@ -682,9 +682,6 @@ Ce code est enregistré localement dans les appareils et effacé au bout de 21 j
     <!-- Begegnungen: FAQ Text -->
     <string name="begegnungen_detail_faq3_text">"Pour que les contacts puissent être détectés, Bluetooth doit toujours rester activé. La consommation n'augmente que légèrement."</string>
 
-    <!-- FAQ Button Titel -->
-    <string name="faq_button_title">"Questions fréquentes"</string>
-
     <!-- Meldungen Keine Meldungen FAQ Titel -->
     <string name="meldungen_nomeldungen_faq1_title">"Que sont les notifications ?"</string>
 
@@ -766,9 +763,6 @@ Ainsi, d'autres utilisateurs de l'application dp3t-app peuvent vérifier s'ils o
 
     <!-- Telefonnummer der Infoline -->
     <string name="infoline_tel_number">"0000"</string>
-
-    <!-- URL für Häufige Fragen Button -->
-    <string name="faq_button_url">"https://www.bag.admin.ch/bag/fr/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/haeufig-gestellte-fragen.html"</string>
 
     <!-- Informieren Flow: Titel erster Screen -->
     <string name="inform_code_intro_title">"Avis important"</string>

@@ -691,9 +691,6 @@ Il codice viene salvato localmente sui dispositivi e nuovamente eliminato dopo 2
 
 Il consumo della batteria aumenta soltanto leggermente."</string>
 
-    <!-- FAQ Button Titel -->
-    <string name="faq_button_title">"Domande frequenti"</string>
-
     <!-- Meldungen Keine Meldungen FAQ Titel -->
     <string name="meldungen_nomeldungen_faq1_title">"Cosa sono le segnalazioni?"</string>
 
@@ -775,9 +772,6 @@ Con esse gli altri utenti dell'app dp3t-app possono controllare se nei giorni sc
 
     <!-- Telefonnummer der Infoline -->
     <string name="infoline_tel_number">"0000"</string>
-
-    <!-- URL für Häufige Fragen Button -->
-    <string name="faq_button_url">"https://www.bag.admin.ch/bag/it/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/haeufig-gestellte-fragen.html"</string>
 
     <!-- Informieren Flow: Titel erster Screen -->
     <string name="inform_code_intro_title">"Avvertenza importante"</string>

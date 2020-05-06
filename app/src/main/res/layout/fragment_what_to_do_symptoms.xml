@@ -157,18 +157,6 @@
 
 				</LinearLayout>
 
-				<Button
-					android:id="@+id/wtd_symptoms_faq_button"
-					style="@style/NextStep.Button.Outlined.Purple"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:layout_gravity="center_horizontal"
-					android:layout_marginStart="@dimen/spacing_medium"
-					android:layout_marginTop="@dimen/spacing_very_large"
-					android:layout_marginEnd="@dimen/spacing_medium"
-					android:layout_marginBottom="@dimen/spacing_huger"
-					android:text="@string/faq_button_title" />
-
 			</LinearLayout>
 
 		</LinearLayout>

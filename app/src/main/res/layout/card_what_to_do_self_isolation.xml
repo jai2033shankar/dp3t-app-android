@@ -138,16 +138,6 @@
 
 		</LinearLayout>
 
-		<Button
-			android:id="@+id/card_encounters_faq_button"
-			style="@style/NextStep.Button.Outlined.Purple"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginLeft="@dimen/spacing_medium"
-			android:layout_marginTop="@dimen/spacing_huger"
-			android:layout_marginRight="@dimen/spacing_medium"
-			android:text="@string/faq_button_title" />
-
 	</LinearLayout>
 
 </LinearLayout>

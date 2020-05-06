@@ -681,9 +681,6 @@ Infoline Coronavirus
     <!-- Begegnungen: FAQ Text -->
     <string name="begegnungen_detail_faq3_text">"In order to recognise encounters, Bluetooth must be switched on at all times. This causes only a minor increase in battery usage."</string>
 
-    <!-- FAQ Button Titel -->
-    <string name="faq_button_title">"FAQs"</string>
-
     <!-- Meldungen Keine Meldungen FAQ Titel -->
     <string name="meldungen_nomeldungen_faq1_title">"What are reports?"</string>
 
@@ -755,9 +752,6 @@ Infoline Coronavirus
 
     <!-- Telefonnummer der Infoline -->
     <string name="infoline_tel_number">"0000"</string>
-
-    <!-- URL für Häufige Fragen Button -->
-    <string name="faq_button_url">"https://www.bag.admin.ch/bag/en/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/haeufig-gestellte-fragen.html"</string>
 
     <!-- Informieren Flow: Titel erster Screen -->
     <string name="inform_code_intro_title">"Important information"</string>

@@ -107,16 +107,6 @@ public class ReportsFragment extends Fragment {
 		callHotlineButton1.setOnClickListener(view1 -> callHotline());
 		callHotlineButton2.setOnClickListener(view1 -> callHotline());
 
-		Button faqButton1 = healthyView.findViewById(R.id.card_encounters_faq_button);
-		Button faqButton2 = saveOthersView.findViewById(R.id.card_encounters_faq_button);
-		Button faqButton3 = hotlineView.findViewById(R.id.card_encounters_faq_button);
-		Button faqButton4 = infectedView.findViewById(R.id.card_encounters_faq_button);
-
-		faqButton1.setOnClickListener(v -> showFaq());
-		faqButton2.setOnClickListener(v -> showFaq());
-		faqButton3.setOnClickListener(v -> showFaq());
-		faqButton4.setOnClickListener(v -> showFaq());
-
 		View link1 = infectedView.findViewById(R.id.card_encounters_link);
 		View link2 = hotlineView.findViewById(R.id.card_encounters_link);
 		View link3 = saveOthersView.findViewById(R.id.card_encounters_link);
@@ -197,11 +187,6 @@ public class ReportsFragment extends Fragment {
 
 	private void openLink(@StringRes int stringRes) {
 		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(stringRes)));
-		startActivity(browserIntent);
-	}
-
-	private void showFaq() {
-		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.faq_button_url)));
 		startActivity(browserIntent);
 	}
 
