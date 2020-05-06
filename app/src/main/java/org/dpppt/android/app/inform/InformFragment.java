@@ -27,7 +27,7 @@ import org.dpppt.android.app.storage.SecureStorage;
 import org.dpppt.android.app.util.InfoDialog;
 import org.dpppt.android.sdk.DP3T;
 import org.dpppt.android.sdk.backend.ResponseCallback;
-import org.dpppt.android.sdk.backend.models.ExposeeAuthMethodAuthorization;
+import org.dpppt.android.sdk.backend.models.ExposeeAuthMethodJson;
 
 public class InformFragment extends Fragment {
 
@@ -140,7 +140,7 @@ public class InformFragment extends Fragment {
 
 	private void informExposed(Date onsetDate, String authorizationHeader) {
 		DP3T.sendIAmInfected(getContext(), onsetDate,
-				new ExposeeAuthMethodAuthorization(authorizationHeader), new ResponseCallback<Void>() {
+				new ExposeeAuthMethodJson(authorizationHeader), new ResponseCallback<Void>() {
 					@Override
 					public void onSuccess(Void response) {
 						if (progressDialog != null && progressDialog.isShowing()) {

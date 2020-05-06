@@ -343,7 +343,7 @@ Ainsi, vous contribuez à endiguer la propagation du nouveau coronavirus."</stri
     <string name="meldungen_detail_guard_others">"Protégez les autres"</string>
 
     <!-- Meldungen Detail: Weisse Box Text -->
-    <string name="meldungen_detail_guard_text">"En cas de questions, appelez l'infoline coronavirus au +41 58 387 77 78"</string>
+    <string name="meldungen_detail_guard_text">"En cas de questions, appelez l'infoline coronavirus au 0000"</string>
 
     <!-- Meldungen Detail Button Weisse Box -->
     <string name="meldungen_detail_call_again_button">"Appeler de nouveau"</string>
@@ -522,7 +522,7 @@ Respectez les consignes sur l'auto-isolement."</string>
     <string name="inform_code_invalid_title">"Code incorrect"</string>
 
     <!-- Fehlermeldung Subtitle ungültiger Code -->
-    <string name="inform_code_invalid_subtitle">"En cas de questions, appelez +41 58 466 07 99"</string>
+    <string name="inform_code_invalid_subtitle">"En cas de questions, appelez 0000"</string>
 
     <!-- Datum: Vor 1 Tag -->
     <string name="date_one_day_ago">"depuis 1 jour"</string>
@@ -765,7 +765,7 @@ Ainsi, d'autres utilisateurs de l'application dp3t-app peuvent vérifier s'ils o
     <string name="inform_send_endtracing_text">"Après un test positif, le traçage est automatiquement interrompu."</string>
 
     <!-- Telefonnummer der Infoline -->
-    <string name="infoline_tel_number">"+41 58 387 77 78"</string>
+    <string name="infoline_tel_number">"0000"</string>
 
     <!-- URL für Häufige Fragen Button -->
     <string name="faq_button_url">"https://www.bag.admin.ch/bag/fr/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/haeufig-gestellte-fragen.html"</string>

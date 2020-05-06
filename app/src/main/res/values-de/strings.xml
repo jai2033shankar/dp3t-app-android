@@ -349,7 +349,7 @@ Damit helfen Sie mit, die Verbreitung des neuen Coronavirus einzudämmen."</stri
     <!-- Meldungen Detail: Weisse Box Text -->
     <string name="meldungen_detail_guard_text">"Bei Rückfragen:
 Infoline Coronavirus
-+41 58 387 77 78"</string>
+0000"</string>
 
     <!-- Meldungen Detail Button Weisse Box -->
     <string name="meldungen_detail_call_again_button">"Erneut anrufen"</string>
@@ -535,7 +535,7 @@ Halten Sie sich an die Anweisungen zur Selbst-Isolation."</string>
 
     <!-- Fehlermeldung Subtitle ungültiger Code -->
     <string name="inform_code_invalid_subtitle">"Bei Fragen: App-Hotline
-+41 58 466 07 99"</string>
+0000"</string>
 
     <!-- Datum: Vor 1 Tag -->
     <string name="date_one_day_ago">"vor 1 Tag"</string>
@@ -782,7 +782,7 @@ Damit können andere dp3t-app App Nutzer prüfen, ob Sie in den letzten Tagen ei
     <string name="inform_send_endtracing_text">"Nach einem positiven Test wird das Tracing automatisch beendet."</string>
 
     <!-- Telefonnummer der Infoline -->
-    <string name="infoline_tel_number">"+41 58 387 77 78"</string>
+    <string name="infoline_tel_number">"0000"</string>
 
     <!-- URL für Häufige Fragen Button -->
     <string name="faq_button_url">"https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/haeufig-gestellte-fragen.html"</string>
