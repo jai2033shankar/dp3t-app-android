@@ -42,7 +42,7 @@ public class MainApplication extends Application {
 			registerReceiver(contactUpdateReceiver, DP3T.getUpdateIntentFilter());
 
 			PublicKey publicKey = SignatureUtil.getPublicKeyFromBase64OrThrow(
-					"LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUZrd0V3WUhLb1pJemowQ0FRWUlLb1pJemowREFRY0RRZ0FFNWRkZWlXN1NHS0ljWS9ESSs1U0NhZnlRWlU0LwpEZXFieCtXRHpFSjF1dWZuYUdVeThEeHZodENyRTFOOTFyQ1BmcDBXT0ZZdkNKTmJ1dXRKVmRrV1VnPT0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0t");
+					BuildConfig.BUCKET_PUBLIC_KEY);
 			DP3T.init(this, "org.dpppt.demo", true, publicKey);
 			CertificatePinner certificatePinner = new CertificatePinner.Builder()
 					.add("demo.dpppt.org", "sha256/YLh1dUR9y6Kja30RrAn7JKnbQG/uEtLMkBgFF2Fuihg=")
